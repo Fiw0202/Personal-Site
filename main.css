@@ -12,6 +12,7 @@
   width: 100%;
   height: 50px;
   background-color: #535353;
+  z-index: 1;
 }
 nav {
   display: flex;
@@ -46,9 +47,11 @@ nav ul li a:hover {
 
 /* Personal Statement*/
 #personal {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   background-color: #1a1a1a;
+  width: 100%;
   padding-top: 130px;
   padding-bottom: 90px;
 }
@@ -161,39 +164,145 @@ nav ul li a:hover {
 /* Project */
 #project-section {
   background-color: #1a1a1a;
+  padding-bottom: 60px;
 }
 #project {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 50px;
-  padding: 30px;
+  padding: 55px;
 }
-.project-box{
+.project-box {
   display: flex;
   justify-content: space-evenly;
 }
-.project1{
+.project1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 500px;
   height: 500px;
-border-radius: 20px;
-background-color: #6c5ef0;
+  border-radius: 20px;
+  background-color: #6c5ef0;
 }
-.project1 h1{
+.project1 h1 {
+  margin-bottom: 65px;
+  text-align: justify;
+  padding: 20px;
   color: white;
+  text-align: center;
 }
-.project1 p{
+.project1 p {
   color: white;
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+  font-size: 22px;
 }
 
-.project2{
-  border: 2px solid red;
+.project2 {
   width: 500px;
   height: 500px;
-  }
-  .project3{
-    border: 2px solid red;
-    width: 500px;
+  border-radius: 20px;
+  background-color: #6c5ef0;
+}
+.project2 h1 {
+  margin-bottom: 235px;
+  text-align: justify;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.project2 p {
+  color: white;
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+  font-size: 22px;
+}
+
+.project3 {
+  width: 500px;
   height: 500px;
-    }
+  border-radius: 20px;
+  background-color: #6c5ef0;
+}
+.project3 h1 {
+  margin-bottom: 235px;
+  text-align: justify;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.project3 p {
+  color: white;
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+  font-size: 22px;
+}
 
 /* Responsive */
+@media only screen and (max-width: 668px) {
+  #personal {
+    width: 117vh;
+    display: flex;
+flex-direction: column;
+   align-items: center;
+    background-color: #1a1a1a;
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+  .personal-name {
+    display: flex;
+    font-size: 80px;
+    color: white;
+  }
+  #first-let {
+    font-family: "Fjalla One", sans-serif !important;
+    font-weight: 400;
+    font-size: 330px;
+    color: #6c5ef0;
+  }
+  .box-p {
+    background-color: #535353;
+    border-radius: 20px;
+    margin: 0 0 80px 0;
+  }
+
+  #mypic {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #Resumebtn {
+    background-color: #6c5ef0;
+    border-radius: 12px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #Resumebtn:hover {
+    color: #6c5ef0;
+    background-color: white;
+    transition: 0.8s;
+  }
+  #Resumebtn:active {
+    scale: (0.9);
+  }
+}
