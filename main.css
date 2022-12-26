@@ -258,8 +258,9 @@ nav ul li a:hover {
   .nav {
     display:none;
   }
+
+  /* Personal */
   #personal {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,7 +281,7 @@ nav ul li a:hover {
   }
   .box-p {
     width: 89%;
-    height: 83vh;
+    height: 56vh;
     background-color: #535353;
     border-radius: 20px;
     margin: 20px;
@@ -313,5 +314,51 @@ nav ul li a:hover {
   }
   #Resumebtn:active {
     scale: (0.9);
+  }
+
+  /* Skill */
+  .skill {
+    padding: 40px;
+  }
+  #skillH {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+  }
+  .skill-icon {
+    display: grid;
+    text-align: center;
+    grid-template-columns:150px 150px ;
+    grid-template-rows:150px 150px 150px;
+  }
+  .skill-icon img {
+    margin: 30px;
+    margin-bottom: 10px;
+    height: 70px;
+  }
+  .skill-icon figcaption {
+    text-align: center;
+    font-weight: 700;
+  }
+  #toolsH {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 20px;
+  }
+  .tools-icon {
+    display: grid;
+    text-align: center;
+    grid-template-columns:150px 150px ;
+    grid-template-rows:150px 150px 150px;
+  }
+  .tools-icon img {
+    margin: 30px;
+    margin-bottom: 10px;
+    height: 70px;
+  }
+  .tools-icon figcaption {
+    text-align: center;
+    font-weight: 700;
   }
 }
