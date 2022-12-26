@@ -252,34 +252,42 @@ nav ul li a:hover {
 
 /* Responsive */
 @media only screen and (max-width: 668px) {
+  nav {
+    display: none;
+  }
+  .nav {
+    display:none;
+  }
   #personal {
-    width: 117vh;
+    width: 100%;
     display: flex;
-flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #1a1a1a;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 90px;
   }
   .personal-name {
-    display: flex;
-    font-size: 80px;
+    font-size: 30px;
     color: white;
+    margin-left: 80px;
   }
   #first-let {
     font-family: "Fjalla One", sans-serif !important;
     font-weight: 400;
-    font-size: 330px;
+    font-size: 130px;
     color: #6c5ef0;
   }
   .box-p {
+    width: 89%;
+    height: 83vh;
     background-color: #535353;
     border-radius: 20px;
-    margin: 0 0 80px 0;
+    margin: 20px;
   }
 
   #mypic {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -295,6 +303,7 @@ flex-direction: column;
     cursor: pointer;
     float: right;
     margin-right: 20px;
+    margin-top:20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #Resumebtn:hover {
